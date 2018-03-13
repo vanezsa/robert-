@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500|Open+Sans:600,700");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3125rem;
+  color: #fff;
+  background-color: #85CEEB; }
+
+.nav-custom {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 1.75rem;
+  line-height: 4rem;
+  background-color: #85CEEB; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FFD304; }
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #3C3E80; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #3C3E80; }
+
+.navbar-light .navbar-brand {
+  color: #2B2E41; }
+  .navbar-light .navbar-brand .text-nav {
+    font-weight: 300; }
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.5); }
+
+.banner {
+  background-image: url(img/bis-card-backdrop.png);
+  background-position: inherit;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  border-radius: 8px; }
+
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:visited,
+.btn.btn-primary:focus {
+  background-color: #F1D743;
+  border-color: #F1D743;
+  border-radius: 0px;
+  color: #2B2E41;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  height: 64px;
+  line-height: 3.15rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+
+a, a:hover {
+  color: #2B2E41;
+  text-transform: uppercase; }
+
+.text-blue-shadow, .text-green-shadow, .text-logo-name, h4 {
+  font-family: 'dk_butterfly_ballregular', sans-serif;
+  color: #423C3D;
+  text-shadow: 2px 2px 1px #46a4a4;
+  letter-spacing: -0.4px;
+  font-size: 64px;
+  line-height: 69px; }
+
+.text-green-shadow {
+  text-shadow: 2px 2px 1px rgba(147, 198, 45, 0.46); }
+
+.text-logo-name {
+  font-size: 150px;
+  letter-spacing: -1px;
+  color: #fff;
+  text-shadow: 2px 2px 1px #2b2e41; }
+
+.text-blue-body {
+  color: #20A5DA;
+  font-weight: 700; }
+
+.text-lm {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  color: #2B2E41;
+  line-height: 4.25rem; }
+
+h4 {
+  font-size: 42px;
+  letter-spacing: -0.28px; }
+
+.img-border-radius {
+  border-radius: 8px; }
+
+.img-rotate {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg); }
+
+.img-overlay-wrap {
+  position: relative; }
+
+.img-overlay-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/*# sourceMappingURL=main.css.map */

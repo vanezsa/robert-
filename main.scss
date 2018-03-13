@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|Open+Sans:600,700');
+
+$font-stack-1: 'Open Sans', sans-serif;
+$font-stack-2: 'Oswald', sans-serif;
+$clr-white: #fff;
+$clr-nav-yellow: #FFD304;
+$clr-nav-blue: #3C3E80;
+$clr-nav-brand: #2B2E41;
+$clr-black: #423C3D;
+$clr-btn-yellow: #F1D743;
+$clr-card-blue: #20A5DA;
+$clr-card-pink: #F0858F;
+$clr-body-bg: #85CEEB;
+$clr-dark-blue: #2B2E41;
+$clr-light-blue: #20A5DA;
+
+body {
+    font-family: $font-stack-1;
+    font-weight: 600;
+    font-size: 1.3125rem;
+    color: $clr-white;
+    background-color: $clr-body-bg;
+}
+
+.nav-custom {
+    font-family: $font-stack-2;
+    text-transform: uppercase;
+    font-weight: 1.75rem;
+    line-height: 4rem;
+    background-color: $clr-body-bg;
+}
+
+.navbar-light .navbar-nav .nav-link { color: $clr-nav-yellow;}
+.navbar-light .navbar-nav .active>.nav-link { color: $clr-nav-blue}
+.navbar-light .navbar-nav .nav-link:hover {color: $clr-nav-blue;}
+.navbar-light .navbar-brand {
+    color: $clr-nav-brand;
+    .text-nav { font-weight: 300;}
+}
+
+.navbar-light .navbar-toggler {border-color: rgba(0,0,0,.5); }
+
+.banner {
+    background-image: url(img/bis-card-backdrop.png);
+    background-position: inherit;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    border-radius: 8px;
+}
+
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:visited,
+.btn.btn-primary:focus {
+    background-color: $clr-btn-yellow;
+    border-color: $clr-btn-yellow;
+    border-radius: 0px;
+    color: $clr-dark-blue;
+    font-weight: 500; 
+    font-family: $font-stack-2;
+    text-transform: uppercase;
+    font-size: 28px;
+    height: 64px;
+    line-height: 3.15rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+a, a:hover {
+    color: $clr-dark-blue;
+    text-transform: uppercase;
+}
+
+%text-shared {
+    font-family: 'dk_butterfly_ballregular', sans-serif;
+    color: $clr-black;
+    text-shadow: 2px 2px 1px #46a4a4;
+    letter-spacing: -0.4px;
+    font-size: 64px;
+    line-height: 69px;
+}
+
+.text-blue-shadow {
+    @extend %text-shared;
+}
+
+.text-green-shadow {
+    @extend %text-shared;
+    text-shadow: 2px 2px 1px rgba(147, 198, 45, 0.46);
+}
+
+.text-logo-name {
+    @extend %text-shared;
+    font-size: 150px;
+    letter-spacing: -1px;
+    color: $clr-white;
+    text-shadow: 2px 2px 1px #2b2e41;
+}
+
+.text-blue-body {
+    color: $clr-light-blue;
+    font-weight: 700;
+}
+
+.text-lm {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: $font-stack-2;
+    color: $clr-dark-blue;
+    line-height: 4.25rem;
+}
+h4 {
+    @extend %text-shared; 
+    font-size: 42px;
+    letter-spacing: -0.28px;
+}
+
+.img-border-radius {
+    border-radius: 8px;
+}
+
+.img-rotate{
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.img-overlay-wrap {
+  position: relative;
+}
+
+.img-overlay-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+    
+
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Sticker</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-7.7%" y="-5.5%" width="115.4%" height="115.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="dr-bob-tales-books" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-383.000000, -426.000000)">
+        <g id="Group-4" transform="translate(138.000000, 421.000000)">
+            <g id="Sticker" filter="url(#filter-1)" transform="translate(294.709745, 52.709745) rotate(-10.000000) translate(-294.709745, -52.709745) translate(249.209745, 7.209745)">
+                <circle id="Oval-3" fill="#79C16B" cx="45.5" cy="45.5" r="45.5"></circle>
+                <text id="Out-Now" font-family="OpenSans-Extrabold, Open Sans" font-size="18" font-weight="600" line-spacing="18" fill="#FFFFFF">
+                    <tspan x="27.9111328" y="47">Out</tspan>
+                    <tspan x="24" y="65">Now</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
