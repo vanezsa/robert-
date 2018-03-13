@@ -14,6 +14,9 @@ $clr-body-bg: #85CEEB;
 $clr-dark-blue: #2B2E41;
 $clr-light-blue: #20A5DA;
 
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: $font-stack-1;
     font-weight: 600;
@@ -90,6 +93,30 @@ a, a:hover {
     text-shadow: 2px 2px 1px rgba(147, 198, 45, 0.46);
 }
 
+.title-card-character {
+    @extend %text-shared;
+    color: $clr-dark-blue;
+    text-shadow: 2px 2px 1px rgba(147, 198, 45, 0.46);
+    position: relative;
+    top: -15px;
+}
+
+%text-shared-characters {
+    font-family: $font-stack-1;
+    font-size: 16px;
+    font-weight: 600;
+    color: $clr-dark-blue;
+}
+
+.text-desc-title {
+    @extend %text-shared-characters;
+    color: $clr-light-blue;
+}
+
+.text-desc {
+    @extend %text-shared-characters;
+}
+
 .text-logo-name {
     @extend %text-shared;
     font-size: 150px;
@@ -111,7 +138,8 @@ a, a:hover {
     color: $clr-dark-blue;
     line-height: 4.25rem;
 }
-h4 {
+
+h4, .text-bottom {
     @extend %text-shared; 
     font-size: 42px;
     letter-spacing: -0.28px;
@@ -131,23 +159,90 @@ h4 {
 }
 
 .img-overlay-wrap {
-  position: relative;
+    position: relative;
+}
+
+a.btn.btn-primary.btn-lg {
+    margin-top: -20px;
 }
 
 .img-overlay-wrap img { box-shadow: 6px 10px 0 0 rgba(82, 98, 79, 0.52); }
 .img-overlay-wrap svg {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-@media only screen and (max-width: 768px) {
+.character-card {
+    border-radius: 8px 8px 0 0;
+    background-color: $clr-card-blue;
+    width: 100%;
+    height: 220px;
+}
+
+.card {
+    border-radius:8px;
+    color: $clr-dark-blue;
+    font-size: 16px;
+    border: none;
+}
+
+.female { background-color: $clr-card-pink; }
+
+.custom-padding {
+    padding-top: 22px;
+}
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+dt {
+    grid-column-start: 1;
+    @extend %text-shared-characters;
+    color: $clr-light-blue;
+}
+
+dd {
+    grid-column-start: 2;
+    @extend %text-shared-characters;
+}
+
+
+
+/*dl {
+display: flex;
+flex-wrap: wrap;
+}
+
+dt {
+width: 33%;
+@extend %text-shared-characters;
+color: $clr-light-blue;
+}
+
+dd {
+margin-left: auto;
+width: 66%;
+@extend %text-shared-characters;
+}*/
+
+@media only screen and (max-width: 991px) {
+    
+
+}
+
+@media only screen and (max-width: 767px) {
     .txt-ctr {
         text-align: center!important;
     }
+    a.btn.btn-primary.btn-lg {
+        margin-top: 20px!important;
+    }
+
 }
 
-    
+
 
 
 

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500|Open+Sans:600,700");
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -59,7 +62,7 @@ a, a:hover {
   color: #2B2E41;
   text-transform: uppercase; }
 
-.text-blue-shadow, .text-green-shadow, .text-logo-name, h4 {
+.text-blue-shadow, .text-green-shadow, .title-card-character, .text-logo-name, h4, .text-bottom {
   font-family: 'dk_butterfly_ballregular', sans-serif;
   color: #423C3D;
   text-shadow: 2px 2px 1px #46a4a4;
@@ -69,6 +72,21 @@ a, a:hover {
 
 .text-green-shadow {
   text-shadow: 2px 2px 1px rgba(147, 198, 45, 0.46); }
+
+.title-card-character {
+  color: #2B2E41;
+  text-shadow: 2px 2px 1px rgba(147, 198, 45, 0.46);
+  position: relative;
+  top: -15px; }
+
+.text-desc-title, .text-desc, dt, dd {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2B2E41; }
+
+.text-desc-title {
+  color: #20A5DA; }
 
 .text-logo-name {
   font-size: 150px;
@@ -88,7 +106,7 @@ a, a:hover {
   color: #2B2E41;
   line-height: 4.25rem; }
 
-h4 {
+h4, .text-bottom {
   font-size: 42px;
   letter-spacing: -0.28px;
   line-height: 55px; }
@@ -106,6 +124,9 @@ h4 {
 .img-overlay-wrap {
   position: relative; }
 
+a.btn.btn-primary.btn-lg {
+  margin-top: -20px; }
+
 .img-overlay-wrap img {
   box-shadow: 6px 10px 0 0 rgba(82, 98, 79, 0.52); }
 
@@ -114,8 +135,56 @@ h4 {
   top: 0;
   left: 0; }
 
-@media only screen and (max-width: 768px) {
+.character-card {
+  border-radius: 8px 8px 0 0;
+  background-color: #20A5DA;
+  width: 100%;
+  height: 220px; }
+
+.card {
+  border-radius: 8px;
+  color: #2B2E41;
+  font-size: 16px;
+  border: none; }
+
+.female {
+  background-color: #F0858F; }
+
+.custom-padding {
+  padding-top: 22px; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+
+dt {
+  grid-column-start: 1;
+  color: #20A5DA; }
+
+dd {
+  grid-column-start: 2; }
+
+/*dl {
+display: flex;
+flex-wrap: wrap;
+}
+
+dt {
+width: 33%;
+@extend %text-shared-characters;
+color: $clr-light-blue;
+}
+
+dd {
+margin-left: auto;
+width: 66%;
+@extend %text-shared-characters;
+}*/
+@media only screen and (max-width: 767px) {
   .txt-ctr {
-    text-align: center !important; } }
+    text-align: center !important; }
+
+  a.btn.btn-primary.btn-lg {
+    margin-top: 20px !important; } }
 
 /*# sourceMappingURL=main.css.map */
