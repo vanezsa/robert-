@@ -10,7 +10,7 @@ body {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 1.75rem;
-  line-height: 4rem;
+  line-height: 3rem;
   background-color: #85CEEB; }
 
 .navbar-light .navbar-nav .nav-link {
@@ -33,10 +33,9 @@ body {
 .banner {
   background-image: url(img/bis-card-backdrop.png);
   background-position: inherit;
-  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
+  height: 500px;
   border-radius: 8px; }
 
 .btn.btn-primary,
@@ -75,6 +74,7 @@ a, a:hover {
   font-size: 150px;
   letter-spacing: -1px;
   color: #fff;
+  line-height: 170px;
   text-shadow: 2px 2px 1px #2b2e41; }
 
 .text-blue-body {
@@ -90,7 +90,8 @@ a, a:hover {
 
 h4 {
   font-size: 42px;
-  letter-spacing: -0.28px; }
+  letter-spacing: -0.28px;
+  line-height: 55px; }
 
 .img-border-radius {
   border-radius: 8px; }
@@ -105,9 +106,16 @@ h4 {
 .img-overlay-wrap {
   position: relative; }
 
+.img-overlay-wrap img {
+  box-shadow: 6px 10px 0 0 rgba(82, 98, 79, 0.52); }
+
 .img-overlay-wrap svg {
   position: absolute;
   top: 0;
   left: 0; }
+
+@media only screen and (max-width: 768px) {
+  .txt-ctr {
+    text-align: center !important; } }
 
 /*# sourceMappingURL=main.css.map */
