@@ -104,7 +104,7 @@ a, a:hover {
   font-weight: 400;
   font-family: "Oswald", sans-serif;
   color: #2B2E41;
-  line-height: 4.25rem; }
+  line-height: 2rem; }
 
 h4, .text-bottom {
   font-size: 42px;
@@ -124,6 +124,9 @@ h4, .text-bottom {
 .img-overlay-wrap {
   position: relative; }
 
+.img-custom-margin {
+  margin-top: -75px; }
+
 a.btn.btn-primary.btn-lg {
   margin-top: -20px; }
 
@@ -133,7 +136,8 @@ a.btn.btn-primary.btn-lg {
 .img-overlay-wrap svg {
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 65%;
+  margin-top: -45px; }
 
 .character-card {
   border-radius: 8px 8px 0 0;
@@ -164,27 +168,50 @@ dt {
 dd {
   grid-column-start: 2; }
 
-/*dl {
-display: flex;
-flex-wrap: wrap;
-}
+.custom-margin-0 {
+  margin-top: -20px; }
 
-dt {
-width: 33%;
-@extend %text-shared-characters;
-color: $clr-light-blue;
-}
+@media (max-width: 1199px) {
+  .img-overlay-wrap svg {
+    left: 58%; }
 
-dd {
-margin-left: auto;
-width: 66%;
-@extend %text-shared-characters;
-}*/
+  .banner {
+    height: 400px; }
+
+  .custom-margin-0 {
+    margin-top: -50px; }
+
+  .text-sm {
+    font-size: 55px;
+    line-height: 59px; }
+
+  .btn.btn-primary,
+  .btn.btn-primary:hover,
+  .btn.btn-primary:active,
+  .btn.btn-primary:visited,
+  .btn.btn-primary:focus {
+    font-size: 24px; } }
+@media only screen and (max-width: 991px) {
+  .img-overlay-wrap svg {
+    left: 45%; }
+
+  .banner {
+    height: auto; }
+
+  .text-sm-1 {
+    font-size: 50px;
+    line-height: 40px; }
+
+  .txt-ctr-1 {
+    text-align: center !important; } }
 @media only screen and (max-width: 767px) {
   .txt-ctr {
     text-align: center !important; }
 
   a.btn.btn-primary.btn-lg {
-    margin-top: 20px !important; } }
+    margin-top: 20px !important; }
+
+  .img-overlay-wrap svg {
+    left: 62%; } }
 
 /*# sourceMappingURL=main.css.map */
