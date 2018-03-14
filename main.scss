@@ -17,6 +17,7 @@ $clr-light-blue: #20A5DA;
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: $font-stack-1;
     font-weight: 600;
@@ -97,8 +98,10 @@ a, a:hover {
     @extend %text-shared;
     color: $clr-dark-blue;
     text-shadow: 2px 2px 1px rgba(147, 198, 45, 0.46);
-    position: relative;
+    position: absolute;
     top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 %text-shared-characters {
@@ -183,6 +186,7 @@ a.btn.btn-primary.btn-lg {
     background-color: $clr-card-blue;
     width: 100%;
     height: 220px;
+    overflow: hidden;
 }
 
 .card {
@@ -190,13 +194,11 @@ a.btn.btn-primary.btn-lg {
     color: $clr-dark-blue;
     font-size: 16px;
     border: none;
+    position: relative;
 }
 
 .female { background-color: $clr-card-pink; }
 
-.custom-padding {
-    padding-top: 22px;
-}
 dl {
     display: grid;
     grid-template-columns: max-content auto;
@@ -255,6 +257,10 @@ dd {
     .txt-ctr-1 {
         text-align: center!important;
     }
+    .text-logo-name {
+        font-size: 115px;
+        line-height: 130px;
+    }
 
 }
 
@@ -268,8 +274,21 @@ dd {
     .img-overlay-wrap svg {
         left: 62%;
     }
+    .text-logo-name {
+        font-size: 95px;
+        line-height: 100px;
+    }
+}
 
-
+@media only screen and (max-width: 576px) {
+    .text-logo-name {
+        font-size: 75px;
+        line-height: 90px;
+    }
+    h4 {
+        font-size: 35px;
+        line-height: 40px;
+    }
 }
 
 

@@ -76,8 +76,10 @@ a, a:hover {
 .title-card-character {
   color: #2B2E41;
   text-shadow: 2px 2px 1px rgba(147, 198, 45, 0.46);
-  position: relative;
-  top: -15px; }
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .text-desc-title, .text-desc, dt, dd {
   font-family: "Open Sans", sans-serif;
@@ -143,19 +145,18 @@ a.btn.btn-primary.btn-lg {
   border-radius: 8px 8px 0 0;
   background-color: #20A5DA;
   width: 100%;
-  height: 220px; }
+  height: 220px;
+  overflow: hidden; }
 
 .card {
   border-radius: 8px;
   color: #2B2E41;
   font-size: 16px;
-  border: none; }
+  border: none;
+  position: relative; }
 
 .female {
   background-color: #F0858F; }
-
-.custom-padding {
-  padding-top: 22px; }
 
 dl {
   display: grid;
@@ -203,7 +204,11 @@ dd {
     line-height: 40px; }
 
   .txt-ctr-1 {
-    text-align: center !important; } }
+    text-align: center !important; }
+
+  .text-logo-name {
+    font-size: 115px;
+    line-height: 130px; } }
 @media only screen and (max-width: 767px) {
   .txt-ctr {
     text-align: center !important; }
@@ -212,6 +217,18 @@ dd {
     margin-top: 20px !important; }
 
   .img-overlay-wrap svg {
-    left: 62%; } }
+    left: 62%; }
+
+  .text-logo-name {
+    font-size: 95px;
+    line-height: 100px; } }
+@media only screen and (max-width: 576px) {
+  .text-logo-name {
+    font-size: 75px;
+    line-height: 90px; }
+
+  h4 {
+    font-size: 35px;
+    line-height: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
